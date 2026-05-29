@@ -9,7 +9,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['Icon.png', 'icon.svg', 'icon-192.png', 'icon-512.png'],
-      manifest: {
+        manifest: {
         name: 'NETGAIN – Cyberpunk Fitness',
         short_name: 'NETGAIN',
         description: 'Cyberpunk 2077 Fitness & Strength Tracker',
@@ -17,7 +17,8 @@ export default defineConfig({
         background_color: '#000000',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        start_url: '/netgain/',
+        scope: '/netgain/',
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
