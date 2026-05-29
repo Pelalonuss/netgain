@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000"/>
+      <stop offset="100%" style="stop-color:#0A0A0A"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3E600"/>
+      <stop offset="100%" style="stop-color:#C4B800"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bg)" rx="80"/>
+  <!-- Border frame -->
+  <rect x="16" y="16" width="480" height="480" fill="none" stroke="#F3E600" stroke-width="3" rx="70" filter="url(#glow)"/>
+  <rect x="24" y="24" width="464" height="464" fill="none" stroke="#F3E600" stroke-width="1" rx="65" opacity="0.4"/>
+  <!-- Corner decorations -->
+  <polyline points="16,100 16,16 100,16" fill="none" stroke="#F3E600" stroke-width="6" filter="url(#glow)"/>
+  <polyline points="412,16 496,16 496,100" fill="none" stroke="#F3E600" stroke-width="6" filter="url(#glow)"/>
+  <polyline points="16,412 16,496 100,496" fill="none" stroke="#F3E600" stroke-width="6" filter="url(#glow)"/>
+  <polyline points="412,496 496,496 496,412" fill="none" stroke="#F3E600" stroke-width="6" filter="url(#glow)"/>
+  <!-- Dumbbell icon -->
+  <!-- Left weight -->
+  <rect x="60" y="200" width="50" height="112" fill="url(#yellow)" rx="8" filter="url(#glow)"/>
+  <rect x="48" y="218" width="74" height="76" fill="url(#yellow)" rx="12" filter="url(#glow)"/>
+  <!-- Bar -->
+  <rect x="110" y="245" width="292" height="22" fill="url(#yellow)" rx="6" filter="url(#glow)"/>
+  <!-- Right weight -->
+  <rect x="402" y="200" width="50" height="112" fill="url(#yellow)" rx="8" filter="url(#glow)"/>
+  <rect x="390" y="218" width="74" height="76" fill="url(#yellow)" rx="12" filter="url(#glow)"/>
+  <!-- CYBER GYM text -->
+  <text x="256" y="390" font-family="Orbitron, monospace" font-size="42" font-weight="900" fill="#F3E600" text-anchor="middle" filter="url(#glow)">CYBER</text>
+  <text x="256" y="435" font-family="Orbitron, monospace" font-size="30" font-weight="700" fill="#F3E600" text-anchor="middle" opacity="0.8">GYM</text>
+  <!-- Decorative lines -->
+  <line x1="60" y1="360" x2="200" y2="360" stroke="#F3E600" stroke-width="2" opacity="0.4"/>
+  <line x1="312" y1="360" x2="452" y2="360" stroke="#F3E600" stroke-width="2" opacity="0.4"/>
+  <!-- Circuit dots -->
+  <circle cx="256" cy="120" r="6" fill="#F3E600" filter="url(#glow)"/>
+  <circle cx="220" cy="140" r="3" fill="#F3E600" opacity="0.6"/>
+  <circle cx="292" cy="140" r="3" fill="#F3E600" opacity="0.6"/>
+  <line x1="256" y1="120" x2="220" y2="140" stroke="#F3E600" stroke-width="1.5" opacity="0.5"/>
+  <line x1="256" y1="120" x2="292" y2="140" stroke="#F3E600" stroke-width="1.5" opacity="0.5"/>
+  <line x1="256" y1="120" x2="256" y2="158" stroke="#F3E600" stroke-width="1.5" opacity="0.5"/>
+</svg>
